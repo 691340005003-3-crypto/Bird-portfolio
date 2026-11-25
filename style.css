@@ -1,30 +1,219 @@
- body{
-            background-color: rgb(248, 250, 250);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: auto;
-            width: 100%;
-            padding-top: 5px;
-        }
-        .botomUP{
-            background-color: linear-gradient(to right, rgb(104, 229, 141),rgb(4, 88, 28));
-            color: rgb(237, 176, 176);
-            font-size: 20px;
-            padding: 10px;
-            font-weight: bold;
-            border-radius: 20px;
-        }
-        .botomUP:hover{
-            background: linear-gradient(to left, rgb(241, 210, 34),rgb(232, 81, 16));
-        }
-        #topDown{
-            background-color:linear-gradient(to left, rgb(34, 203, 246),rgb(9, 4, 1));
-            color: rgb(50, 96, 96);
-            font-size: 20px;
-            padding: 10px;
-            font-weight: bold;
-            border: none;
-            border-radius: 20px;
-        }
-        #topDown:hover{
-            background-color:linear-gradient(to left, rgb(6, 46, 243),rgb(209, 89, 14));
-        }
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #292631;
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    padding: 18px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand span {
+    color: #9275d5;
+}
+
+.nav-link {
+    color: #555 !important;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #9275d5 !important;
+}
+
+/* Buttons */
+.btn-dark {
+    background-color: #292631;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.btn-outline-dark {
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+/* Hero */
+.hero {
+    padding: 110px 0;
+    background-color: #faf9fc;
+}
+
+.subtitle {
+    color: #9275d5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #9275d5;
+}
+
+.hero h5 {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #777;
+    line-height: 1.9;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    width: 85%;
+    max-width: 430px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* General Sections */
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    color: #777;
+    line-height: 1.9;
+}
+
+.quote {
+    color: #9275d5;
+    margin-top: 25px;
+    font-style: italic;
+}
+
+/* Skills */
+.skills-section {
+    background-color: #faf9fc;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    padding: 35px;
+    height: 100%;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.skill-card h4 {
+    color: #9275d5;
+    margin-bottom: 25px;
+}
+
+.skill-card p {
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Contact */
+.contact-text {
+    color: #777;
+    margin: 20px 0 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #292631;
+    border: 1px solid #ddd;
+    padding: 10px 22px;
+    margin: 5px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #9275d5;
+    color: white;
+    border-color: #9275d5;
+}
+
+/* Footer */
+footer {
+    background-color: #292631;
+    color: #ffffff;
+    padding: 25px 0;
+}
+
+footer p {
+    margin-bottom: 8px;
+    color: #cccccc;
+}
+
+footer a {
+    color: #c8b6f0;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+}
